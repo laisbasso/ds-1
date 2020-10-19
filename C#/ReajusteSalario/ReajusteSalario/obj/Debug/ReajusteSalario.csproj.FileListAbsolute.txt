@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\ReajusteSalario\ReajusteSalario\bin\Debug\ReajusteSalario.exe.config
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\ReajusteSalario\ReajusteSalario\bin\Debug\ReajusteSalario.exe
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\ReajusteSalario\ReajusteSalario\bin\Debug\ReajusteSalario.pdb
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\ReajusteSalario\ReajusteSalario\obj\Debug\ReajusteSalario.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\ReajusteSalario\ReajusteSalario\obj\Debug\ReajusteSalario.exe
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\ReajusteSalario\ReajusteSalario\obj\Debug\ReajusteSalario.pdb

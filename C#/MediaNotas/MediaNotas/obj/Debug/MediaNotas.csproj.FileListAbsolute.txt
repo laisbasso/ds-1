@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\MediaNotas\MediaNotas\bin\Debug\MediaNotas.exe.config
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\MediaNotas\MediaNotas\bin\Debug\MediaNotas.exe
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\MediaNotas\MediaNotas\bin\Debug\MediaNotas.pdb
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\MediaNotas\MediaNotas\obj\Debug\MediaNotas.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\MediaNotas\MediaNotas\obj\Debug\MediaNotas.exe
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\MediaNotas\MediaNotas\obj\Debug\MediaNotas.pdb

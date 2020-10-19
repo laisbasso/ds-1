@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\Calculo\Calculo\bin\Debug\Calculo.exe.config
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\Calculo\Calculo\bin\Debug\Calculo.exe
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\Calculo\Calculo\bin\Debug\Calculo.pdb
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\Calculo\Calculo\obj\Debug\Calculo.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\Calculo\Calculo\obj\Debug\Calculo.exe
+C:\Users\User\Desktop\ETEC\Visual Studio\C#\Calculo\Calculo\obj\Debug\Calculo.pdb

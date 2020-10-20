@@ -1,0 +1,40 @@
+body{
+    background: #64a7acdc;
+    color:white;
+    font: normal 18px Verdana;
+    text-align: center;
+    padding: 20px;
+}
+  
+section{
+    background: white;
+    color: black;
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    width: 30vw;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+}
+
+input{
+    width: 150px;
+}
+
+button{
+    background: #64a7acdc;
+    color: white;
+    font: normal 18px Verdana;
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    border: 0;    
+}
+
+footer{
+    padding: 20px;
+    font-style: italic;
+}
+
+.borda-vermelha{
+    border: 2px solid red !important;
+  }

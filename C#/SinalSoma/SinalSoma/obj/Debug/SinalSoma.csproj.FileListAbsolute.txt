@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\Novo\SinalSoma\SinalSoma\bin\Debug\SinalSoma.exe.config
+C:\Users\User\Desktop\Novo\SinalSoma\SinalSoma\bin\Debug\SinalSoma.exe
+C:\Users\User\Desktop\Novo\SinalSoma\SinalSoma\bin\Debug\SinalSoma.pdb
+C:\Users\User\Desktop\Novo\SinalSoma\SinalSoma\obj\Debug\SinalSoma.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Novo\SinalSoma\SinalSoma\obj\Debug\SinalSoma.exe
+C:\Users\User\Desktop\Novo\SinalSoma\SinalSoma\obj\Debug\SinalSoma.pdb

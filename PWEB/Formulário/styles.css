@@ -1,0 +1,26 @@
+body{
+    background: rgba(100, 167, 172, 0.863);
+    color:white;
+    font: normal 18px Verdana;
+    text-align: center;
+    padding: 20px;
+}
+
+section{
+    background: white;
+    color: black;
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    width: 800px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+}
+
+input#enviar{
+    background: #64a7acdc;
+    color: white;
+    font: normal 18px Verdana;
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+}

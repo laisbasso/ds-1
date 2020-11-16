@@ -1,6 +1,5 @@
 programa
-{
-	inclua biblioteca Matematica	
+{	
 	inteiro cont = 0, num, pares = 0
 	real soma = 0, media
 	funcao inicio()

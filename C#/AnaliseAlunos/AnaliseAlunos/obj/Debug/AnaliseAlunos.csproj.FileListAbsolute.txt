@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\etec c#\AnaliseAlunos\AnaliseAlunos\bin\Debug\AnaliseAlunos.exe.config
+C:\Users\User\Desktop\etec c#\AnaliseAlunos\AnaliseAlunos\bin\Debug\AnaliseAlunos.exe
+C:\Users\User\Desktop\etec c#\AnaliseAlunos\AnaliseAlunos\bin\Debug\AnaliseAlunos.pdb
+C:\Users\User\Desktop\etec c#\AnaliseAlunos\AnaliseAlunos\obj\Debug\AnaliseAlunos.csprojAssemblyReference.cache
+C:\Users\User\Desktop\etec c#\AnaliseAlunos\AnaliseAlunos\obj\Debug\AnaliseAlunos.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\etec c#\AnaliseAlunos\AnaliseAlunos\obj\Debug\AnaliseAlunos.exe
+C:\Users\User\Desktop\etec c#\AnaliseAlunos\AnaliseAlunos\obj\Debug\AnaliseAlunos.pdb

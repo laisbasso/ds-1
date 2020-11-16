@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int mediaPositivos(int argc, char *argv[]) {
 	
 	float media, soma = 0;
 	int n = 1, cont = 0;

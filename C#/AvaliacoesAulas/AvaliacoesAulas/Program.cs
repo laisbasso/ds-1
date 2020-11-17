@@ -24,7 +24,7 @@ namespace AvaliacoesAulas
                 Console.WriteLine("Entre com uma avaliação de 0 a 10 em relação às aulas: ");
                 aluno.avaliacao = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("RA: " + aluno.ra + " - Idade: " + aluno.idade + " - Avaliação: " + aluno.avaliacao);
+                Console.WriteLine(aluno.concatenarDados());
             }
             Console.ReadKey();
         }

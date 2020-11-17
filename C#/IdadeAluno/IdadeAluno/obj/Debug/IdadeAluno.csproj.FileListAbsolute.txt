@@ -5,3 +5,10 @@ C:\Users\User\Desktop\etec c#\IdadeAluno\IdadeAluno\obj\Debug\IdadeAluno.csprojA
 C:\Users\User\Desktop\etec c#\IdadeAluno\IdadeAluno\obj\Debug\IdadeAluno.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\etec c#\IdadeAluno\IdadeAluno\obj\Debug\IdadeAluno.exe
 C:\Users\User\Desktop\etec c#\IdadeAluno\IdadeAluno\obj\Debug\IdadeAluno.pdb
+C:\Users\User\Desktop\ETEC\GitHub\C#\IdadeAluno\IdadeAluno\bin\Debug\IdadeAluno.exe.config
+C:\Users\User\Desktop\ETEC\GitHub\C#\IdadeAluno\IdadeAluno\bin\Debug\IdadeAluno.exe
+C:\Users\User\Desktop\ETEC\GitHub\C#\IdadeAluno\IdadeAluno\bin\Debug\IdadeAluno.pdb
+C:\Users\User\Desktop\ETEC\GitHub\C#\IdadeAluno\IdadeAluno\obj\Debug\IdadeAluno.csprojAssemblyReference.cache
+C:\Users\User\Desktop\ETEC\GitHub\C#\IdadeAluno\IdadeAluno\obj\Debug\IdadeAluno.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ETEC\GitHub\C#\IdadeAluno\IdadeAluno\obj\Debug\IdadeAluno.exe
+C:\Users\User\Desktop\ETEC\GitHub\C#\IdadeAluno\IdadeAluno\obj\Debug\IdadeAluno.pdb

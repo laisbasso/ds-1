@@ -15,7 +15,7 @@ namespace ConvitesEspetaculo
 
             Console.WriteLine("Entre com o valor total do espetáculo: ");
             valorTotal = float.Parse(Console.ReadLine());
-            Console.WriteLine("Entre com o valor total do unitário do convite: ");
+            Console.WriteLine("Entre com o valor unitário do convite: ");
             valorConvite = float.Parse(Console.ReadLine());
 
             qtdConvites = (int)Math.Ceiling(valorTotal / valorConvite);

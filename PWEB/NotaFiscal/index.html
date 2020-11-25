@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+</head>
+
+<body>
+    <h1>Processamento de Nota Fiscal</h1>
+    <form>
+        <div class="container">
+            <section>
+                <fieldset>
+                    <legend>
+                        Dados do cliente
+                    </legend>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" class="form-control" id="nome-cliente" placeholder="Nome completo do cliente">
+                    <label for="nome">CPF</label>
+                    <input type="text" class="form-control" id="cpf-cliente" placeholder="CPF">
+                    <label for="nome">Endereço de entrega</label>
+                    <input type="text" class="form-control" id="endereco-cliente" placeholder="Endereço de entrega">
+                    <label for="nome">Telefone</label>
+                    <input type="text" class="form-control" id="telefone-cliente" placeholder="Telefone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Dados do vendedor
+                    </legend>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" class="form-control" id="nome-vendedor" placeholder="Nome completo do vendedor">
+                    <label for="nome">Código</label>
+                    <input type="text" class="form-control" id="codigo-vendedor" placeholder="Código">
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Dados da nota fiscal
+                    </legend>
+                    <label for="nome">Número</label>
+                    <input type="number" class="form-control" id="numero-nota" placeholder="Número da nota fiscal">
+                    <label for="nome">Código</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="Código">
+                    <label for="nome">Data de emissão</label>
+                    <input type="date" class="form-control" id="data-emissao" placeholder="Data de emissão">
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Item nº 1
+                    </legend>
+                    <label for="1-produto">Produto</label>
+                    <select type="number" id="produto-1" onchange="valorProduto1()">
+                        <option selected disabled>Selecione o primeiro item</option>
+                        <option value="Bicicleta">Bicicleta</option>
+                        <option value="Patins">Patins</option>
+                        <option value="Skate">Skate</option>
+                    </select>
+
+                    <div>Valor unitário: <span id="valor-produto-1"></span></div>
+
+                    <label for="qtd-produto-1">Quantidade</label>
+                    <input type="number" class="form-control" id="qtd-produto-1"
+                        placeholder="Quantidade do primeiro produto" min="1">
+
+                    <button type="button" onclick="calcularSubtotalProduto1()">Calcular</button>
+
+                    <div>Subtotal: <span id="valor-subtotal-1"></span></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Item nº 2
+                    </legend>
+                    <label for="2-produto">Produto</label>
+                    <select type="number" id="produto-2" onchange="valorProduto2()">
+                        <option selected disabled>Selecione o segundo item</option>
+                        <option value="Cubo mágico">Cubo mágico</option>
+                        <option value="Lego">Lego</option>
+                        <option value="Quebra-cabeça">Quebra-cabeça</option>
+                    </select>
+
+                    <div>Valor unitário: <span id="valor-produto-2"></span></div>
+
+                    <label for="qtd-produto-2">Quantidade</label>
+                    <input type="number" class="form-control" id="qtd-produto-2"
+                        placeholder="Quantidade do segundo produto" min="1">
+
+                    <button type="button" onclick="calcularSubtotalProduto2()">Calcular</button>
+
+                    <div>Subtotal: <span id="valor-subtotal-2"></span></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Item nº 3
+                    </legend>
+                    <label for="3-produto">Produto</label>
+                    <select type="number" id="produto-3" onchange="valorProduto3()">
+                        <option selected disabled>Selecione o terceiro item</option>
+                        <option value="Cara a cara">Cara a cara</option>
+                        <option value="Munchkin">Munchkin</option>
+                        <option value="Pula macaco">Pula macaco</option>
+                    </select>
+
+                    <div>Valor unitário: <span id="valor-produto-3"></span></div>
+
+                    <label for="qtd-produto-3">Quantidade</label>
+                    <input type="number" class="form-control" id="qtd-produto-3"
+                        placeholder="Quantidade do terceiro produto" min="1">
+
+                    <button type="button" onclick="calcularSubtotalProduto3()">Calcular</button>
+
+                    <div>Subtotal: <span id="valor-subtotal-3"></span></div>
+                </fieldset>
+
+                <hr>
+                <button type="button" onclick="calcularTotal()">Calcular</button>
+
+                <fieldset>
+                    <legend>Valor total</legend>
+                    <div><span id="valor-total">Favor selecionar todos os campos!</span></div>
+                </fieldset>
+            </section>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body {
+  background: #64a7acdc;
+  color: white;
+  font: normal 18px Verdana;
+  text-align: center;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+section {
+  background: white;
+  color: black;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  width: 30vw;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+  margin-bottom: 30px;
+}
+
+div {
+  margin: 15px 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+fieldset {
+  margin: 20px 0;
+  padding: 30px;
+}
+
+input,
+select {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+button {
+  background: #64a7acdc;
+  color: white;
+  font: normal 18px Verdana;
+  width: 100px;
+  height: 35px;
+  border-radius: 25px;
+  border: 0;
+}
+
+hr {
+  border: none;
+  border-bottom: dotted 3px;
+  margin: 25px 0;
+}

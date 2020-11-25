@@ -1,0 +1,7 @@
+C:\Users\User\Source\Repos\LucroEspetaculo\LucroEspetaculo\obj\Debug\LucroEspetaculo.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\LucroEspetaculo\LucroEspetaculo\obj\Debug\LucroEspetaculo.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\LucroEspetaculo\LucroEspetaculo\bin\Debug\LucroEspetaculo.exe.config
+C:\Users\User\Source\Repos\LucroEspetaculo\LucroEspetaculo\bin\Debug\LucroEspetaculo.exe
+C:\Users\User\Source\Repos\LucroEspetaculo\LucroEspetaculo\bin\Debug\LucroEspetaculo.pdb
+C:\Users\User\Source\Repos\LucroEspetaculo\LucroEspetaculo\obj\Debug\LucroEspetaculo.exe
+C:\Users\User\Source\Repos\LucroEspetaculo\LucroEspetaculo\obj\Debug\LucroEspetaculo.pdb

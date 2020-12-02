@@ -1,6 +1,6 @@
 programa
 {
-	inteiro vA[10], vB[10], vC[20], i = 0, j= 0
+	inteiro vA[10], vB[10], vC[20], i = 0, j = 0
 	funcao inicio()
 	{
 		
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 389; 
+ * @POSICAO-CURSOR = 53; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {vA, 3, 9, 2}-{vB, 3, 17, 2}-{vC, 3, 25, 2}-{i, 3, 33, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

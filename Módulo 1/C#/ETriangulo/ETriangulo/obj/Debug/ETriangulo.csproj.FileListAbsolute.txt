@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\ETEC\GitHub\C#\ETriangulo\ETriangulo\bin\Debug\ETriangulo.exe.config
-C:\Users\User\Desktop\ETEC\GitHub\C#\ETriangulo\ETriangulo\bin\Debug\ETriangulo.exe
-C:\Users\User\Desktop\ETEC\GitHub\C#\ETriangulo\ETriangulo\bin\Debug\ETriangulo.pdb
-C:\Users\User\Desktop\ETEC\GitHub\C#\ETriangulo\ETriangulo\obj\Debug\ETriangulo.csprojAssemblyReference.cache
-C:\Users\User\Desktop\ETEC\GitHub\C#\ETriangulo\ETriangulo\obj\Debug\ETriangulo.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\ETEC\GitHub\C#\ETriangulo\ETriangulo\obj\Debug\ETriangulo.exe
-C:\Users\User\Desktop\ETEC\GitHub\C#\ETriangulo\ETriangulo\obj\Debug\ETriangulo.pdb

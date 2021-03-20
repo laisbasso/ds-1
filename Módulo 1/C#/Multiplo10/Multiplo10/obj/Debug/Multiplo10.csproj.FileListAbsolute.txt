@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\etec c#\Multiplo10\Multiplo10\bin\Debug\Multiplo10.exe.config
-C:\Users\User\Desktop\etec c#\Multiplo10\Multiplo10\bin\Debug\Multiplo10.exe
-C:\Users\User\Desktop\etec c#\Multiplo10\Multiplo10\bin\Debug\Multiplo10.pdb
-C:\Users\User\Desktop\etec c#\Multiplo10\Multiplo10\obj\Debug\Multiplo10.csprojAssemblyReference.cache
-C:\Users\User\Desktop\etec c#\Multiplo10\Multiplo10\obj\Debug\Multiplo10.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\etec c#\Multiplo10\Multiplo10\obj\Debug\Multiplo10.exe
-C:\Users\User\Desktop\etec c#\Multiplo10\Multiplo10\obj\Debug\Multiplo10.pdb

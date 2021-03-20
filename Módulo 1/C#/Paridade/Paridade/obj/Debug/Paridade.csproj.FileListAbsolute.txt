@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\Novo\Paridade\Paridade\obj\Debug\Paridade.csprojAssemblyReference.cache
-C:\Users\User\Desktop\Novo\Paridade\Paridade\obj\Debug\Paridade.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Novo\Paridade\Paridade\bin\Debug\Paridade.exe.config
-C:\Users\User\Desktop\Novo\Paridade\Paridade\bin\Debug\Paridade.exe
-C:\Users\User\Desktop\Novo\Paridade\Paridade\bin\Debug\Paridade.pdb
-C:\Users\User\Desktop\Novo\Paridade\Paridade\obj\Debug\Paridade.exe
-C:\Users\User\Desktop\Novo\Paridade\Paridade\obj\Debug\Paridade.pdb

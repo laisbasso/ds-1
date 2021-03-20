@@ -1,6 +1,0 @@
-C:\Users\User\Source\Repos\LitrosUsados\LitrosUsados\bin\Debug\LitrosUsados.exe.config
-C:\Users\User\Source\Repos\LitrosUsados\LitrosUsados\bin\Debug\LitrosUsados.exe
-C:\Users\User\Source\Repos\LitrosUsados\LitrosUsados\bin\Debug\LitrosUsados.pdb
-C:\Users\User\Source\Repos\LitrosUsados\LitrosUsados\obj\Debug\LitrosUsados.csproj.CoreCompileInputs.cache
-C:\Users\User\Source\Repos\LitrosUsados\LitrosUsados\obj\Debug\LitrosUsados.exe
-C:\Users\User\Source\Repos\LitrosUsados\LitrosUsados\obj\Debug\LitrosUsados.pdb

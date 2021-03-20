@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Dobro\Dobro\bin\Debug\Dobro.exe.config
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Dobro\Dobro\bin\Debug\Dobro.exe
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Dobro\Dobro\bin\Debug\Dobro.pdb
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Dobro\Dobro\obj\Debug\Dobro.csprojAssemblyReference.cache
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Dobro\Dobro\obj\Debug\Dobro.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Dobro\Dobro\obj\Debug\Dobro.exe
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Dobro\Dobro\obj\Debug\Dobro.pdb

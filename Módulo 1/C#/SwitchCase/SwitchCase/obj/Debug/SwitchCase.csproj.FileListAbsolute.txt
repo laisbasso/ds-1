@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\SwitchCase\SwitchCase\bin\Debug\SwitchCase.exe.config
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\SwitchCase\SwitchCase\bin\Debug\SwitchCase.exe
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\SwitchCase\SwitchCase\bin\Debug\SwitchCase.pdb
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\SwitchCase\SwitchCase\obj\Debug\SwitchCase.csprojAssemblyReference.cache
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\SwitchCase\SwitchCase\obj\Debug\SwitchCase.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\SwitchCase\SwitchCase\obj\Debug\SwitchCase.exe
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\SwitchCase\SwitchCase\obj\Debug\SwitchCase.pdb

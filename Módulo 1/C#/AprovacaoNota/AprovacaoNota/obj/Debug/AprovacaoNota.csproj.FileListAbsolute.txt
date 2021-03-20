@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\Novo\AprovacaoNota\AprovacaoNota\bin\Debug\AprovacaoNota.exe.config
-C:\Users\User\Desktop\Novo\AprovacaoNota\AprovacaoNota\bin\Debug\AprovacaoNota.exe
-C:\Users\User\Desktop\Novo\AprovacaoNota\AprovacaoNota\bin\Debug\AprovacaoNota.pdb
-C:\Users\User\Desktop\Novo\AprovacaoNota\AprovacaoNota\obj\Debug\AprovacaoNota.csprojAssemblyReference.cache
-C:\Users\User\Desktop\Novo\AprovacaoNota\AprovacaoNota\obj\Debug\AprovacaoNota.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Novo\AprovacaoNota\AprovacaoNota\obj\Debug\AprovacaoNota.exe
-C:\Users\User\Desktop\Novo\AprovacaoNota\AprovacaoNota\obj\Debug\AprovacaoNota.pdb

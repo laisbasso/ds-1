@@ -1,6 +1,0 @@
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\ConvitesEspetaculo\ConvitesEspetaculo\bin\Debug\ConvitesEspetaculo.exe.config
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\ConvitesEspetaculo\ConvitesEspetaculo\bin\Debug\ConvitesEspetaculo.exe
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\ConvitesEspetaculo\ConvitesEspetaculo\bin\Debug\ConvitesEspetaculo.pdb
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\ConvitesEspetaculo\ConvitesEspetaculo\obj\Debug\ConvitesEspetaculo.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\ConvitesEspetaculo\ConvitesEspetaculo\obj\Debug\ConvitesEspetaculo.exe
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\ConvitesEspetaculo\ConvitesEspetaculo\obj\Debug\ConvitesEspetaculo.pdb

@@ -1,6 +1,0 @@
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Soma\Soma\bin\Debug\Soma.exe.config
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Soma\Soma\bin\Debug\Soma.exe
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Soma\Soma\bin\Debug\Soma.pdb
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Soma\Soma\obj\Debug\Soma.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Soma\Soma\obj\Debug\Soma.exe
-C:\Users\User\Desktop\ETEC\Visual Studio\C#\Soma\Soma\obj\Debug\Soma.pdb

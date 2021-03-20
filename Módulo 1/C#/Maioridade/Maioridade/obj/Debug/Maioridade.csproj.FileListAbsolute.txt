@@ -1,6 +1,0 @@
-C:\Users\User\Desktop\Novo\Maioridade\Maioridade\bin\Debug\Maioridade.exe.config
-C:\Users\User\Desktop\Novo\Maioridade\Maioridade\bin\Debug\Maioridade.exe
-C:\Users\User\Desktop\Novo\Maioridade\Maioridade\bin\Debug\Maioridade.pdb
-C:\Users\User\Desktop\Novo\Maioridade\Maioridade\obj\Debug\Maioridade.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Novo\Maioridade\Maioridade\obj\Debug\Maioridade.exe
-C:\Users\User\Desktop\Novo\Maioridade\Maioridade\obj\Debug\Maioridade.pdb

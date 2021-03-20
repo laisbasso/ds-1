@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\Novo\IdadeVoto\IdadeVoto\bin\Debug\IdadeVoto.exe.config
-C:\Users\User\Desktop\Novo\IdadeVoto\IdadeVoto\bin\Debug\IdadeVoto.exe
-C:\Users\User\Desktop\Novo\IdadeVoto\IdadeVoto\bin\Debug\IdadeVoto.pdb
-C:\Users\User\Desktop\Novo\IdadeVoto\IdadeVoto\obj\Debug\IdadeVoto.csprojAssemblyReference.cache
-C:\Users\User\Desktop\Novo\IdadeVoto\IdadeVoto\obj\Debug\IdadeVoto.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Novo\IdadeVoto\IdadeVoto\obj\Debug\IdadeVoto.exe
-C:\Users\User\Desktop\Novo\IdadeVoto\IdadeVoto\obj\Debug\IdadeVoto.pdb

@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\etec c#\TotalParesControle\TotalParesControle\bin\Debug\TotalParesControle.exe.config
-C:\Users\User\Desktop\etec c#\TotalParesControle\TotalParesControle\bin\Debug\TotalParesControle.exe
-C:\Users\User\Desktop\etec c#\TotalParesControle\TotalParesControle\bin\Debug\TotalParesControle.pdb
-C:\Users\User\Desktop\etec c#\TotalParesControle\TotalParesControle\obj\Debug\TotalParesControle.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\etec c#\TotalParesControle\TotalParesControle\obj\Debug\TotalParesControle.exe
-C:\Users\User\Desktop\etec c#\TotalParesControle\TotalParesControle\obj\Debug\TotalParesControle.pdb
-C:\Users\User\Desktop\etec c#\TotalParesControle\TotalParesControle\obj\Debug\TotalParesControle.csprojAssemblyReference.cache

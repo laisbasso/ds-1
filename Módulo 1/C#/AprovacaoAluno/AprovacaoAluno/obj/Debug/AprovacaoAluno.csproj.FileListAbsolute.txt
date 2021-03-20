@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\Novo\AprovacaoAluno\AprovacaoAluno\bin\Debug\AprovacaoAluno.exe.config
-C:\Users\User\Desktop\Novo\AprovacaoAluno\AprovacaoAluno\bin\Debug\AprovacaoAluno.exe
-C:\Users\User\Desktop\Novo\AprovacaoAluno\AprovacaoAluno\bin\Debug\AprovacaoAluno.pdb
-C:\Users\User\Desktop\Novo\AprovacaoAluno\AprovacaoAluno\obj\Debug\AprovacaoAluno.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Novo\AprovacaoAluno\AprovacaoAluno\obj\Debug\AprovacaoAluno.exe
-C:\Users\User\Desktop\Novo\AprovacaoAluno\AprovacaoAluno\obj\Debug\AprovacaoAluno.pdb
-C:\Users\User\Desktop\Novo\AprovacaoAluno\AprovacaoAluno\obj\Debug\AprovacaoAluno.csprojAssemblyReference.cache

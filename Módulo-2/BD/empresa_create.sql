@@ -1,6 +1,6 @@
-create database projeto1;
+create database db_empresa;
 
-use projeto1;
+use db_empresa;
 
 create table cliente(
 	codigo_id_cli int identity,
@@ -83,6 +83,7 @@ create table projeto_funcionario(
 	codigo_id_fun int,
 	horas_prf numeric(10,2),
 	vltotal_prf numeric(10,2),
+	primary key (codigo_id_pro, codigo_id_fun),
 	foreign key (codigo_id_pro) references projeto,
 	foreign key (codigo_id_fun) references funcionario
 );

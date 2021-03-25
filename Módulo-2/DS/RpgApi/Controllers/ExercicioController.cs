@@ -35,7 +35,7 @@ namespace RpgApi.Controllers
         {
             List<Personagem> lista = personagens.FindAll(p => p.Nome == nome);
 
-            if (lista.Count == 0) return BadRequest("Nenhum personagem encontrado");
+            if (lista.Count == 0) return NotFound("Nenhum personagem encontrado");
 
             return Ok(lista);
         }    
@@ -71,8 +71,7 @@ namespace RpgApi.Controllers
             int qtdPersonagens = personagens.Count;
             int somaInteligencia = personagens.Sum(p => p.Inteligencia);
             
-            string msg = "Quantidade total de personagens: " + qtdPersonagens
-                        + "\nSomatório de inteligência dos personagens: " + somaInteligencia;
+            string msg = string.Format("Quantidade total de personagens: {0} \nSomatório de inteligência dos personagens: {1}", qtdPersonagens, somaInteligencia);
 
             return Ok(msg);
         } 

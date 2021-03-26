@@ -33,8 +33,8 @@ insert into projeto values
 select * from projeto;
 
 insert into estado values
-	('S', 'São Paulo'),
-	('M', 'Minas Gerais');
+	('SP', 'São Paulo'),
+	('MG', 'Minas Gerais');
 
 select * from estado;
 
@@ -48,16 +48,16 @@ insert into cliente_email values
 select * from cliente_email;
 
 insert into cliente_endereco values
-	(1, 'Rua 1', 123, 'Vila 1', 'São Paulo', 'S', '12345000'),
-	(1, 'Rua 1', 456, 'Vila 1', 'Minas Gerais', 'M', '12345000'),
-	(2, 'Rua 2', 123, 'Vila 2', 'São Paulo', 'S', '23456000'),
-	(2, 'Rua 2', 456, 'Vila 2', 'Minas Gerais', 'M', '23456000'),
-	(3, 'Rua 3', 123, 'Vila 3', 'São Paulo', 'S', '34567000'),
-	(3, 'Rua 3', 456, 'Vila 3', 'Minas Gerais', 'M', '34567000'),
-	(4, 'Rua 4', 123, 'Vila 4', 'São Paulo', 'S', '45678000'),
-	(4, 'Rua 4', 456, 'Vila 4', 'Minas Gerais', 'M', '45678000'),
-	(5, 'Rua 5', 123, 'Vila 5', 'São Paulo', 'S', '56789000'),
-	(5, 'Rua 5', 456, 'Vila 5', 'Minas Gerais', 'M', '56789000');
+	(1, 'Rua 1', 123, 'Vila 1', 'São Paulo', 'SP', '12345000'),
+	(1, 'Rua 1', 456, 'Vila 1', 'Minas Gerais', 'MG', '12345000'),
+	(2, 'Rua 2', 123, 'Vila 2', 'São Paulo', 'SP', '23456000'),
+	(2, 'Rua 2', 456, 'Vila 2', 'Minas Gerais', 'MG', '23456000'),
+	(3, 'Rua 3', 123, 'Vila 3', 'São Paulo', 'SP', '34567000'),
+	(3, 'Rua 3', 456, 'Vila 3', 'Minas Gerais', 'MG', '34567000'),
+	(4, 'Rua 4', 123, 'Vila 4', 'São Paulo', 'SP', '45678000'),
+	(4, 'Rua 4', 456, 'Vila 4', 'Minas Gerais', 'MG', '45678000'),
+	(5, 'Rua 5', 123, 'Vila 5', 'São Paulo', 'SP', '56789000'),
+	(5, 'Rua 5', 456, 'Vila 5', 'Minas Gerais', 'MG', '56789000');
 		
 select * from cliente_endereco;
 

@@ -9,7 +9,7 @@ create table cliente(
 );
 
 create table estado(
-	sigla_id_est char,
+	sigla_id_est char(2),
 	nome_est varchar(50),
 	primary key (sigla_id_est)
 );
@@ -48,7 +48,7 @@ create table cliente_endereco(
 	numero_end int,
 	bairro_end varchar(50),
 	cidade_end varchar(50),
-	sigla_id_est char,
+	sigla_id_est char(2),
 	cep_end varchar(8),
 	primary key (codigo_id_end, codigo_id_cli), -- chave composta
 	foreign key (codigo_id_cli) references cliente,
@@ -87,3 +87,10 @@ create table projeto_funcionario(
 	foreign key (codigo_id_pro) references projeto,
 	foreign key (codigo_id_fun) references funcionario
 );
+
+alter table cliente_endereco drop constraint FK__cliente_e__sigla__4316F928;
+alter table cliente_endereco alter column sigla_id_est char(2);
+alter table estado drop constraint PK__estado__FD82C1BB34CEF2AA;
+alter table estado alter column sigla_id_est char(2) not null;
+alter table estado add primary key (sigla_id_est);
+alter table cliente_endereco add foreign key (sigla_id_est) references estado;

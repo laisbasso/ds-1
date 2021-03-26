@@ -121,5 +121,3 @@ create table item_carrinho(
 	foreign key (isbn_id_liv) references livro,
 	foreign key (numero_id_car) references carrinho
 );
-
-drop database db_livraria;

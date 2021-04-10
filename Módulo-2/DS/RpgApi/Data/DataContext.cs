@@ -11,6 +11,7 @@ namespace RpgApi.Data
         }
 
         public DbSet<Personagem> Personagens { get; set; }
-        
+        public DbSet<Arma> Armas { get; set; }
+
     }
 }

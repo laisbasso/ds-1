@@ -2,9 +2,9 @@ namespace RpgApi.Models
 {
     public class Arma
     {
-        public int Id;
-        public string Nome;
-        public int Dano;
-        public Personagem Personagem;
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public int Dano { get; set; }
+        //public Personagem Personagem;
     }
 }

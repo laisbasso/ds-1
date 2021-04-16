@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RpgApi.Data;
 
 namespace RpgApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20210415224843_MigracaoUsuario")]
+    partial class MigracaoUsuario
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,9 +55,6 @@ namespace RpgApi.Migrations
                     b.Property<int>("Forca")
                         .HasColumnType("int");
 
-                    b.Property<string>("FotoPersonagem")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("Inteligencia")
                         .HasColumnType("int");
 
@@ -65,12 +64,7 @@ namespace RpgApi.Migrations
                     b.Property<int>("PontosVida")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Personagens");
                 });
@@ -97,20 +91,6 @@ namespace RpgApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("RpgApi.Models.Personagem", b =>
-                {
-                    b.HasOne("RpgApi.Models.Usuario", "Usuario")
-                        .WithMany("Personagens")
-                        .HasForeignKey("UsuarioId");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("RpgApi.Models.Usuario", b =>
-                {
-                    b.Navigation("Personagens");
                 });
 #pragma warning restore 612, 618
         }

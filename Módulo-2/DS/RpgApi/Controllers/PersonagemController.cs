@@ -4,6 +4,8 @@ using RpgApi.Models;
 using RpgApi.Models.Enuns;
 using RpgApi.Data;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace RpgApi.Controllers
 {
@@ -19,26 +21,33 @@ namespace RpgApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(Personagem personagem)
+        public async Task<IActionResult> Add(Personagem personagem)
         {
-            _context.Personagens.Add(personagem);
-            _context.SaveChanges();
-            List<Personagem> personagens = _context.Personagens.ToList();
+            await _context.Personagens.AddAsync(personagem);
+            await _context.SaveChangesAsync();
+            List<Personagem> personagens = await _context.Personagens.ToListAsync();
             return Ok(personagens);
         }
 
-        [HttpGet("GetAll")]
-        public IActionResult GetAll()
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetSingle(int id)
         {
-            List<Personagem> personagens = _context.Personagens.ToList();
+            Personagem personagem = await _context.Personagens.FirstOrDefaultAsync(p => p.Id == id);
+            return Ok(personagem);
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAll()
+        {
+            List<Personagem> personagens = await _context.Personagens.ToListAsync();
             return Ok(personagens);
         }
 
         [HttpPut]
-        public IActionResult Update(Personagem personagem)
+        public async Task<IActionResult> Update(Personagem personagem)
         {
             _context.Personagens.Update(personagem);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return Ok(personagem);
         }
 

@@ -32,7 +32,7 @@ namespace RpgApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetSingle(int id)
         {
-            Personagem personagem = await _context.Personagens.FirstOrDefaultAsync(p => p.Id == id);
+            Personagem personagem = await _context.personagens.FirstOrDefaultAsync(p => p.Id == id);
             return Ok(personagem);
         }
 

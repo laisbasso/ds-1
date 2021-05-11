@@ -21,11 +21,20 @@ namespace RpgApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddAsync(Arma arma)
+        public async Task<IActionResult> AddAsync(Arma novaArma)
         {
-            await _context.Armas.AddAsync(arma);
+            Personagem personagem = await _context.Personagens
+                .FirstOrDefaultAsync(p => p.Id == novaArma.PersonagemId);
+
+            if(personagem == null)
+                return BadRequest("Não existe personagem com o ID informado.");
+
+            await _context.Armas.AddAsync(novaArma);
             await _context.SaveChangesAsync();
-            List<Arma> armas = await _context.Armas.ToListAsync();
+
+            List<Arma> armas = await _context.Armas
+                .Where(p => p.PersonagemId == novaArma.PersonagemId)
+                .ToListAsync();
             return Ok(armas);
         }
 

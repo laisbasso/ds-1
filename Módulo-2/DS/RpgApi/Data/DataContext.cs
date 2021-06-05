@@ -14,11 +14,15 @@ namespace RpgApi.Data
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Habilidade> Habilidades { get; set; }
         public DbSet<PersonagemHabilidade> PersonagemHabilidades { get; set; }
+        public DbSet<Disputa> Disputas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PersonagemHabilidade>()
                 .HasKey(ph => new { ph.PersonagemId, ph.HabilidadeId }); 
+
+            modelBuilder.Entity<Usuario>()
+                .Property(u => u.Perfil).HasDefaultValue("Jogador");
         }
     }
 }

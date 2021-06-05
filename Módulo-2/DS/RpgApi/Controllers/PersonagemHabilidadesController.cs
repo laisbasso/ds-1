@@ -6,6 +6,8 @@ using RpgApi.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
 
 namespace RpgApi.Controllers
 {
@@ -14,10 +16,38 @@ namespace RpgApi.Controllers
     public class PersonagemHabilidadesController : ControllerBase
     {
         private readonly DataContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public PersonagemHabilidadesController(DataContext context)
+        public PersonagemHabilidadesController(DataContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
+        }
+
+        public int ObterUsuarioId()
+        {
+            return int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
+        }
+
+        [HttpGet("{personagemId}")]
+        public async Task<IActionResult> GetHabilidadesPersonagem(int personagemId)
+        {
+            List<PersonagemHabilidade> phLista = new List<PersonagemHabilidade>();
+
+            phLista = await _context.PersonagemHabilidades
+                .Include(p => p.Personagem)
+                .Include(p => p.Habilidade)
+                .Where(p => p.Personagem.Usuario.Id == ObterUsuarioId() && p.Personagem.Id == personagemId).ToListAsync();
+
+            return Ok(phLista);
+        }
+
+        [HttpGet("GetHabilidades")]
+        public async Task<IActionResult> GetHabilidades()
+        {
+            List<Habilidade> habilidades = new List<Habilidade>();
+            habilidades = await _context.Habilidades.ToListAsync();
+            return Ok(habilidades);
         }
 
         [HttpPost]
@@ -47,18 +77,18 @@ namespace RpgApi.Controllers
             return Ok(ph);
         }
 
-        [HttpPost("DeletePersonagemHabilidade/{idPersonagem}/{idHabilidade}")] 
-        public async Task<IActionResult> DeletePersonagemHabilidade(int idPersonagem, int idHabilidade)
+        [HttpPost("DeletePersonagemHabilidade")] 
+        public async Task<IActionResult> DeletePersonagemHabilidade(PersonagemHabilidade ph)
         {
-            //Desafio 2 = funciona!
-            PersonagemHabilidade ph = await _context.PersonagemHabilidades.FirstOrDefaultAsync(p => p.PersonagemId == idPersonagem && p.HabilidadeId == idHabilidade);
+            PersonagemHabilidade phRemover = await _context.PersonagemHabilidades
+            .FirstOrDefaultAsync(phBusca => phBusca.PersonagemId == ph.PersonagemId && phBusca.HabilidadeId == ph.HabilidadeId);
 
             if (ph == null)
                 return BadRequest("Combinação de personagem e habilidade não encontrada para os IDs informados.");
 
-            _context.PersonagemHabilidades.Remove(ph);
+            _context.PersonagemHabilidades.Remove(phRemover);
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok("Removido com sucesso.");
         }
     }
 }

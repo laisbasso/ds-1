@@ -6,6 +6,7 @@ using RpgApi.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace RpgApi.Controllers
 {
@@ -14,10 +15,12 @@ namespace RpgApi.Controllers
     public class ArmaController : ControllerBase
     {
         private readonly DataContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public ArmaController(DataContext context)
+        public ArmaController(DataContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         [HttpPost]
@@ -28,6 +31,12 @@ namespace RpgApi.Controllers
 
             if(personagem == null)
                 return BadRequest("Não existe personagem com o ID informado.");
+
+            Arma arma = await _context.Armas
+                .FirstOrDefaultAsync(ar => ar.PersonagemId == novaArma.PersonagemId);
+
+            if(arma != null)
+                return BadRequest("O personagem informado já contém uma arma.");
 
             await _context.Armas.AddAsync(novaArma);
             await _context.SaveChangesAsync();

@@ -43,6 +43,30 @@ namespace RpgApi.Migrations
                     b.ToTable("Armas");
                 });
 
+            modelBuilder.Entity("RpgApi.Models.Disputa", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AtacanteId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DataDisputa")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Narracao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OponenteId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Disputas");
+                });
+
             modelBuilder.Entity("RpgApi.Models.Habilidade", b =>
                 {
                     b.Property<int>("Id")
@@ -74,11 +98,17 @@ namespace RpgApi.Migrations
                     b.Property<int>("Defesa")
                         .HasColumnType("int");
 
+                    b.Property<int>("Derrotas")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Disputas")
+                        .HasColumnType("int");
+
                     b.Property<int>("Forca")
                         .HasColumnType("int");
 
-                    b.Property<string>("FotoPersonagem")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<byte[]>("FotoPersonagem")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<int>("Inteligencia")
                         .HasColumnType("int");
@@ -90,6 +120,9 @@ namespace RpgApi.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Vitorias")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -121,14 +154,19 @@ namespace RpgApi.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Foto")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<byte[]>("Foto")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("varbinary(max)");
 
                     b.Property<byte[]>("PasswordSalt")
                         .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Perfil")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)")
+                        .HasDefaultValue("Jogador");
 
                     b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");

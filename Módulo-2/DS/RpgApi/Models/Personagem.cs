@@ -13,11 +13,14 @@ namespace RpgApi.Models
         public int Defesa { get; set; } = 10;
         public int Inteligencia { get; set; } = 10;
         public ClasseEnum Classe { get; set; } = ClasseEnum.Cavaleiro;
-        public string FotoPersonagem { get; set; }
+        public byte[] FotoPersonagem { get; set; }
         [JsonIgnore]
         public Usuario Usuario { get; set; }
         [JsonIgnore]
         public Arma Arma { get; set; }
         public List<PersonagemHabilidade> PersonagemHabilidades { get; set; }
+        public int Disputas { get; set; }
+        public int Vitorias { get; set; }
+        public int Derrotas { get; set; }
     }
 }

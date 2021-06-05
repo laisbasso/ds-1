@@ -66,8 +66,8 @@ namespace RpgMvc.Controllers
             {
                 HttpContext.Session.SetString("SessionTokenUsuario", serialized);
                 TempData["Mensagem"] = string.Format("Bem-vindo {0}!", u.Username);
-                //return RedirectToAction("Index", "Personagens");
-                return IndexLogin();
+                return RedirectToAction("Index", "Personagens");
+                //return IndexLogin();
             }
             else 
             {

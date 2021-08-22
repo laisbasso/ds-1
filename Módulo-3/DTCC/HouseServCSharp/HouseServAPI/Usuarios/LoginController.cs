@@ -15,33 +15,15 @@ namespace HouseServAPI.Usuarios
 {
     [ApiController]
     [Route("[controller]")]
-    public class UsuariosController : ControllerBase
+    public class LoginController : ControllerBase
     {
         private readonly DataContext _context;
         private readonly IConfiguration _configuration;
 
-        public UsuariosController(DataContext context, IConfiguration configuration)
+        public LoginController(DataContext context, IConfiguration configuration)
         {
             _context = context;
             _configuration = configuration;
-        }
-
-        private void CriarPasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
-        {
-            using (var hmac = new System.Security.Cryptography.HMACSHA512())
-            {
-                passwordSalt = hmac.Key;
-                passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
-            }
-        }
-
-        public async Task<bool> UsuarioExistente(string cpf_cnpj, string email)
-        {
-            if (await _context.Usuarios.AnyAsync(x => x.Cpf_Cnpj == cpf_cnpj || x.Email == email))
-            {
-                return true;
-            }
-            return false;
         }
 
         private bool VerificarPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
@@ -61,38 +43,12 @@ namespace HouseServAPI.Usuarios
         }
 
         [AllowAnonymous]
-        [HttpPost("Cadastro")]
-        public async Task<IActionResult> RegistrarUsuario(Usuario usuario)
-        {
-            try
-            {
-                if (await UsuarioExistente(usuario.Cpf_Cnpj, usuario.Email))
-                    return BadRequest("Usuário já cadastrado");
-
-                CriarPasswordHash(usuario.Senha, out byte[] passwordHash, out byte[] passwordSalt);
-
-                usuario.Senha = string.Empty;
-                usuario.SenhaHash = passwordHash;
-                usuario.SenhaSalt = passwordSalt;
-
-                await _context.Usuarios.AddAsync(usuario);
-                await _context.SaveChangesAsync();
-
-                return Ok(usuario.Id);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        [AllowAnonymous]
-        [HttpPost("Login")]
+        [HttpPost]
         public async Task<IActionResult> LoginUsuario(Usuario credenciaisUsuario)
         {
             //Usuario usuario = await _context.Usuarios.FirstOrDefaultAsync(x =>
             //    x.Cpf_Cnpj.Equals(credenciaisUsuario.Cpf_Cnpj));
-            Usuario usuario = await _context.Usuarios.FirstAsync(x =>
+            Usuario usuario = await _context.Usuarios.FirstOrDefaultAsync(x =>
                 x.Email.ToLower().Equals(credenciaisUsuario.Email.ToLower()));
 
             if (usuario == null)
@@ -105,18 +61,9 @@ namespace HouseServAPI.Usuarios
                 return BadRequest("Senha incorreta.");
             }
             else
-            {
-                return Ok();
-                //return Ok(Convert.ToString(usuario.Id));                  
-                //return Ok(CriarToken(usuario));
+            {              
+                return Ok(CriarToken(usuario));
             }
-        }
-
-        [HttpGet("GetUsuarios")]
-        public async Task<IActionResult> GetAsync()
-        {
-            List<Usuario> listaUsuarios = await _context.Usuarios.ToListAsync();
-            return Ok(listaUsuarios);
         }
 
         private string CriarToken(Usuario usuario)
@@ -125,7 +72,7 @@ namespace HouseServAPI.Usuarios
             {
                 new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
                 new Claim(ClaimTypes.Name, usuario.Cpf_Cnpj),
-                //new Claim(ClaimTypes.Role, usuario.Pf_Pj)
+                new Claim(ClaimTypes.Role, usuario.Perfil)
             };
             SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8
             .GetBytes(_configuration.GetSection("AppSettings:Token").Value));

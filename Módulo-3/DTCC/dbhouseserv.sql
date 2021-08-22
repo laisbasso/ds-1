@@ -1,12 +1,17 @@
-drop database dbhouseserv;
+create database dbhouseserv;
 
 use dbhouseserv;
+
+drop table estado_cidade;
+drop table endereco;
 
 create table estado_cidade(
   id int identity primary key,
   estado varchar(2) not null,
   cidade varchar(30) not null
 );
+
+insert into estado_cidade values ('SP', 'São Paulo');
 
 create table endereco(
   id int identity primary key,
@@ -17,6 +22,8 @@ create table endereco(
   estado_cidade int not null,
   foreign key (estado_cidade) references estado_cidade,
 );
+
+alter table endereco add cidade varchar(25);
   
 create table documentos(
   id int identity primary key,
@@ -25,26 +32,26 @@ create table documentos(
   foto_rosto varchar(320) not null
 );
 
-drop table documentos;
-drop table endereço;
-
-create table dados_pessoais(
+create table usuarios(
   id int identity primary key,
   endereco int,
   documentos int,
   email varchar(40) not null unique,
-  senha varchar(60) not null,
-  senhahash varchar(260) not null,
-  senhasalt varchar(260) not null,
+  senhahash varbinary(max) not null,
+  senhasalt varbinary(max) not null,
   pf_pj varchar(8) not null,
   nome varchar(60) not null,
   cpf_cnpj varchar(14) not null unique,
   telefone varchar(13) not null,
-  status varchar(10) not null,
+  perfil varchar(8) not null,
   foreign key (endereco) references endereco,
   foreign key (documentos) references documentos,
 );
- 
+
+alter table usuarios add column perfil varchar(8) not null;
+
+drop table usuarios;
+
 create table cliente(
   id int identity primary key,
   dados_pessoais int not null,

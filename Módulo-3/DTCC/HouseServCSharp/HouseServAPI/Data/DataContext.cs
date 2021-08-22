@@ -1,4 +1,6 @@
 using HouseServAPI.Usuarios;
+using HouseServAPI.Usuarios.Documentos;
+using HouseServAPI.Usuarios.Endereco;
 using Microsoft.EntityFrameworkCore;
 
 namespace HouseServAPI.Data
@@ -9,7 +11,9 @@ namespace HouseServAPI.Data
         {            
         }
 
-        public DbSet<Usuarios.Usuario> Usuarios { get; set;}
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Documentos> Documentos { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,4 +1,4 @@
--- dupla: Lais Basso e Gustavo Gomes
+-- trio: Lais Basso, Gustavo Gomes e Arthur Esteves
 
 use DBLivraria2sem2021;
 
@@ -40,6 +40,45 @@ end;
 execute p_gravar_livro '8533613370', 'O senhor dos anéis I - Edição Limitada', 'Térra Média', 1, 13, '2010-02-03', 30, 50; 
 
 select * from livro where isbn_id_liv = '8533613370';    
+
+select 1 from livro where isbn_id_liv = '8533613370';
+select 1 from livro where isbn_id_liv = 'aaa';
+
+-- procedure 2
+
+create procedure p_gravar_livro2
+@isbnidliv char(15),
+@tituloliv varchar(100),
+@resumoliv varchar(250),
+@codigoidfor int,
+@codigoided int,
+@dtpublicacaoliv date,
+@vlcustoliv numeric(10,2),
+@vlvendaliv numeric(10,2)
+as
+begin
+
+	if exists (select * from livro where isbn_id_liv = @isbnidliv)
+		update livro set 
+			isbn_id_liv = @isbnidliv,
+			titulo_liv = @tituloliv,
+			resumo_liv = @resumoliv, 
+			codigo_id_for = @codigoidfor,
+			codigo_id_ed = @codigoided, 
+			dtpublicacao_liv = @dtpublicacaoliv,
+			vlcusto_liv = @vlcustoliv, 
+			vlvenda_liv = @vlvendaliv
+		where isbn_id_liv = @isbnidliv
+
+	else
+	insert into livro
+					(isbn_id_liv, titulo_liv, resumo_liv, codigo_id_for, codigo_id_ed, dtpublicacao_liv, vlcusto_liv, vlvenda_liv)
+		values (@isbnidliv, @tituloliv, @resumoliv, @codigoidfor, @codigoided, @dtpublicacaoliv, @vlcustoliv, @vlvendaliv)
+end;
+
+execute p_gravar_livro2 'aa', 'O senhor dos anéis II - Edição Limitada', 'Térra Média', 1, 13, '2010-02-03', 30, 50; 
+
+select * from livro where isbn_id_liv = 'aa';    
 
 -- Criar uma procedure – p_ins_livro_completo – para inserir o registro na tabela LIVRO, CATEGORIA e AUTOR.
 

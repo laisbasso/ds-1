@@ -32,28 +32,7 @@ execute p_sel_carrinho 2;
 -- descrição da editora, descrição da categoria, nome dos autores, preço de custo e preço de venda, onde parâmetro de pesquisa será 
 -- qualquer parte do título do livro. Escrever um exemplo de execução.
 
-create procedure p_sel_livros
-@titulolivro varchar(100)
-as
-select liv.isbn_id_liv,
-	   liv.titulo_liv,
-	   liv.dtpublicacao_liv,
-	   form.descricao_for,
-	   edi.nome_ed,
-	   cat.descricao_cat,
-	   aut.nome_aut,
-	   liv.vlcusto_liv,
-	   liv.vlvenda_liv
-from livro liv
-inner join formato_livro form on liv.codigo_id_for = form.codigo_id_for
-inner join editora edi on liv.codigo_id_ed = edi.codigo_id_ed
-inner join livro_categoria lcat on liv.isbn_id_liv = lcat.isbn_id_liv
-inner join categoria cat on lcat.codigo_id_cat = cat.codigo_id_cat
-inner join livro_autor laut on liv.isbn_id_liv = laut.isbn_id_liv
-inner join autor aut on laut.codigo_id_au = aut.codigo_id_au
-where liv.titulo_liv like '%'+@titulolivro+'%';
-
-execute p_sel_livros "man";
+k
 
 -- Criar uma procedure – p_ins_cliente – Para inserir registro em todos os campos da tabela cliente.  Escrever um exemplo de execução.
 
